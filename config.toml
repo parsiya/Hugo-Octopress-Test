@@ -1,0 +1,134 @@
+baseurl = "http://parsiya.io.s3-website-us-east-1.amazonaws.com/"
+disablePathToLower = false
+languageCode = "en-us"
+title = "Hugo-Octopress Demo"
+theme = "Hugo-Octopress"
+
+# number of blog posts displayed in each page
+paginate = 6
+
+# frontmatter will be generated in yaml format
+metadataformat = "yaml"
+
+# use internal highlighter instead of Chroma
+pygmentsUseClassic = true
+pygmentsuseclasses = false
+pygmentsstyle = "solarized_dark"
+
+# you need to install Solarized from https://github.com/john2x/solarized-pygment.git
+# Octopress blog used Solarized_dark
+# options are solarized_dark (octopress), solarized_dark256 and default (solarized light)
+
+# will make the highlight shortcode and ``` do the same thing - otherwise they are treated differently and we do not want that
+pygmentscodefences = true
+
+# disqusShortname = ""
+
+# can pass in pygments options here, it can also be added in the highlight shortcode
+# pygmentsoptions = "linenos=true"
+
+[permalinks]
+post = "/:year-:month-:day-:title/" # change the post URL to look like the old ones
+
+# menu
+# links will open in a new window except links to "/" - links are added to navigation in hugo-octopress/layouts/partials/navigation.html
+
+[[menu.main]]
+  Name = "License Page"
+  URL = "/license/"
+  weight = 2
+
+[[menu.main]]
+  Name = "Individual page 1"
+  URL = "/page1"
+  weight = 3
+
+[[menu.main]]
+  Name = "This theme on Github"
+  URL = "https://github.com/parsiya/hugo-octopress"
+  weight = 10
+
+[[menu.main]]
+  Name = "These Hugo Shortcodes on Github"
+  URL = "https://github.com/parsiya/Hugo-Shortcodes"
+  weight = 11
+
+# sidebar menus
+# enable with "sidebar_menu_enabled = true" in [params]
+# header text is "sidebar_menu_header" in [params]
+
+[[menu.sidebar]]
+  Name = "Categories"
+  URL = "/categories/"
+  weight = 1
+
+[[menu.sidebar]]
+  Name = "Tags"
+  URL = "/tags/"
+  weight = 5
+
+[[menu.sidebar]]
+  Name = "External link to example.com"
+  URL = "https://example.com"
+  weight = 10
+
+[params]
+
+  navigationNewWindow = true
+  sidebarRecentLimit = 5
+
+  sidebarHeader = "Sidebar Header"
+
+  sidebarText = """Sidebar text. You can use markdown here. Including links like [example.com](https://example.com).
+  </br></br>
+  Add new lines with `</br>` or add two spaces to the end of the line like regular markdown.  
+  New line after two spaces.
+  """
+
+  sidebarMenuEnabled = true
+  sidebarMenuHeader = "Sidebar links!"
+
+  notfoundHeader = "404 Header"
+  notfoundText = """404 page. Supports markdown.  
+  [example.com](https://example.com)."""
+
+  # if false, all of the post will appear on front page (and in pagination)
+  truncate = true
+
+  # author's name (this will appear in metadata and under posts)
+  author = "Author Name"
+
+  # appears in the site header under website title
+  subtitle = "Hugo-Octopress demo site - subtitle."
+
+  # used in the search engine
+  searchEngineURL = "https://www.google.com/search"
+
+  # Text of the Continue Reading label. &rarr; == right arrow, but it gets messed up in the string so we will add it to index.html manually
+  continueReadingText = "continueReadingText text"
+
+  # Google analytics code
+  # googleAnalytics = ""
+
+  bitbucket = "https://bitbucket.org/parsiya/"
+  twitter = "https://twitter.com/cryptogangsta/"
+  keybase = "https://keybase.io/parsiya/"
+  github = "https://github.com/parsiya/Hugo-Octopress/"
+  linkedin = "https://www.linkedin.com/in/parsiya"
+
+  rss = true  # switch to true to enable RSS icon link
+
+  defaultDescription = ""
+
+  # does this even work in action?
+  # defaultKeywords = ["Hugo" , "Hugo-Octopress" , "demo"]
+
+  tableOfContents = false
+
+  # generate taxonomy list
+  generateTaxonomyList = true
+
+# blackfriday is Hugo's markdown engine. Options are at: https://gohugo.io/overview/configuration/ (scroll down to "Configure Blackfriday rendering")
+[blackfriday]
+  hrefTargetBlank = true # open the external links in a new window
+  fractions = false
