@@ -1,4 +1,4 @@
-baseurl = "http://parsiya.io.s3-website-us-east-1.amazonaws.com/"
+baseurl = "http://hugo-octopress-test.s3-website-us-east-1.amazonaws.com/"
 disablePathToLower = false
 languageCode = "en-us"
 title = "Hugo-Octopress Demo"
@@ -10,25 +10,19 @@ paginate = 6
 # frontmatter will be generated in yaml format
 metadataformat = "yaml"
 
-# use internal highlighter instead of Chroma
-pygmentsUseClassic = true
-pygmentsuseclasses = false
-pygmentsstyle = "solarized_dark"
-
-# you need to install Solarized from https://github.com/john2x/solarized-pygment.git
-# Octopress blog used Solarized_dark
-# options are solarized_dark (octopress), solarized_dark256 and default (solarized light)
-
-# will make the highlight shortcode and ``` do the same thing - otherwise they are treated differently and we do not want that
+# Highlight shortcode and code fences (```) will be treated similarly
 pygmentscodefences = true
 
-# disqusShortname = ""
+pygmentsStyle = "solarized-dark"
 
-# can pass in pygments options here, it can also be added in the highlight shortcode
-# pygmentsoptions = "linenos=true"
+# disable RSS on everything but home
+[outputs]
+  section = ["HTML"]
+  taxonomy = ["HTML"]
+  taxonomyTerm = ["HTML"]
 
 [permalinks]
-post = "/:year-:month-:day-:title/" # change the post URL to look like the old ones
+  post = "/:year-:month-:day-:title/" # change the post URL to look like the old ones
 
 # menu
 # links will open in a new window except links to "/" - links are added to navigation in hugo-octopress/layouts/partials/navigation.html

@@ -1,3 +1,4 @@
 *.exe
 thumbs.db
 s3cmd
+public
