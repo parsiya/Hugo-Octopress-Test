@@ -122,6 +122,10 @@ pygmentsStyle = "solarized-dark"
   # generate taxonomy list
   generateTaxonomyList = true
 
+  mainSections = ["post"]
+
+  compactIndex = false
+
 # blackfriday is Hugo's markdown engine. Options are at: https://gohugo.io/overview/configuration/ (scroll down to "Configure Blackfriday rendering")
 [blackfriday]
   hrefTargetBlank = true # open the external links in a new window
