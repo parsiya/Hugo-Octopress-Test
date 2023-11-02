@@ -55,7 +55,7 @@ func main() {
 {{< /codecaption >}}
 
 
-Python code highlight using the Hugo internal `highligh` shortcode:
+Python code highlight using the Hugo internal `highlight` shortcode:
 
 {{< highlight python >}}
 from base64 import b64encode
