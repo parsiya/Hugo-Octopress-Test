@@ -18,10 +18,10 @@ This should display the current year: `{{< year >}}`
 
 [abbr](https://github.com/parsiya/Hugo-Shortcodes#abbr-html-tag-abbrhtml) shortcode:
 
-This should create an `abbr` tag with title of `World Health Organization` and 
-text of `WHO`.
+This should create an `abbr` tag with title of
+`National Institute of Standards and Technology` and text of `NIST`.
 
-{{< abbr title="World Health Organization" text="WHO" >}}
+{{< abbr title="National Institute of Standards and Technology" text="NIST" >}}
 
 ----------
 

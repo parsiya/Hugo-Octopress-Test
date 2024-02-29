@@ -2,3 +2,4 @@
 thumbs.db
 s3cmd
 public
+.hugo_build.lock
