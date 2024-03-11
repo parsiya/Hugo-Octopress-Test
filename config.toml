@@ -1,7 +1,7 @@
-baseurl = "http://hugo-octopress-test.s3-website-us-east-1.amazonaws.com/"
+baseurl = "https://hugo-octopress-test.vercel.app/"
 disablePathToLower = false
 languageCode = "en-us"
-title = "Hugo-Octopress Demo"
+title = "Hugo-Octopress Demo on Vercel"
 theme = "Hugo-Octopress"
 
 # number of blog posts displayed in each page
@@ -106,7 +106,6 @@ pygmentsStyle = "solarized-dark"
 
   bitbucket = "https://bitbucket.org/parsiya/"
   twitter = "https://twitter.com/cryptogangsta/"
-  keybase = "https://keybase.io/parsiya/"
   github = "https://github.com/parsiya/Hugo-Octopress/"
   linkedin = "https://www.linkedin.com/in/parsiya"
 
